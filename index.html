@@ -11,46 +11,63 @@
 
 </head>
 <body>
-    <header>
-        <!--header section-->
-    
-        <nav class=" flex justify-between">
-        <h1 class="nav-titel text-7xl font-bold"> Hockey
-          <span class="nav-pri text-red-600">'</span> s </h1>
-          <div class="flex ">
-        
-            <ul class="flex justify-evenly">
-            <li><a href=""><span class="home text-red-500">Home</span></a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Pages</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
    
-    <div>
-        <i class="fa-solid fa-magnifying-glass"></i>
-    </div>
-            <div>
-                <button class="btn text-white bg-red-500 lg:text-xl font-bold text-xl">Get Ticket</button>
-            </div>
-        </nav>
-       <div class="banner">
-        <div class="carousel w-full">
-            <div id="slidel" class="carousel-item relative w-full">
-                <img src="Images/1.png" class="w-full">
-              <div class="lg:w-[500px] h-100px p-4 -top-600px left-100px bg-black absolute">
-              <h1 class="texr-2xl text-white font-extrabold">Meet all the heroes from the field</h1>
-              <p class="text-white font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-              </div>
-           </div>
-
+  <div class="navbar bg-base-100 mb-2">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
         </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li>
+           Home
+          </li>
+          <li>About</li>
+          <li>Pages</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <a class="btn btn-ghost text-2xl">Hockey<span class="text-red-700">’</span>s</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu flex gap-3 menu-horizontal px-1">
+        <li class="text-red-600">
+          Home
+         </li>
+         <li>About</li>
+         <li>Pages</li>
+         <li>Blog</li>
+         <li>Contact</li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <button class="btn btn-ghost btn-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+      </button>
+      <a class="btn btn-error">Get Ticket</a>
+    </div>
+  </div>
 
-       </div>
-   
-    </header>
-    <!--header end-->
     <main>
+      <!--banner section-->
+      <div >
+        <div class="carousel w-full relative">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex bottom-5 left-5">
+            <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a> 
+            <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+          </div>
+        </div> 
+        
+      </div>
+      <div class="bg-black text-white rounded-lg  w-[500px] p-4 bottom-0 right-0 absolute">
+        <h4 class="text-2xl font-bold mb-2">Meet all the heroes from the field</h4>
+        <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
+      </div>
+      
         <!--new prodact section-->
         <div>
                <div class="card card-side bg-base-100 shadow-xl">
